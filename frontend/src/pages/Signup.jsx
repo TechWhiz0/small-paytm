@@ -47,7 +47,7 @@ export const Signup = () => {
       };
 
       const response = await axios.post(
-        `${process.env.REACT_APP_SERVER_URL}/api/v1/user/signup`,
+        import.meta.env.VITE_SERVER_URL+ "/api/v1/user/signup",
         requestData,
         config
       );
